@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary project</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container" id="login">
+    <div class="login-container">
+        <div class="output"></div>
+        <div class="avatar"><img src="img/books.jpg" class="img-circle img-responsive" /></div>
+        <div class="form-box">
+            <form id="login_form" method="post" accept-charset="utf-8" action="javascript:void(0);" onsubmit="login2();">
+                <input name="login" type="text" placeholder="Логин">
+                <input type="password" placeholder="Пароль" name="password" class="password">
+                <button class="btn btn-lg btn-block btn-success margin-top" type="submit">Войти</button>
+            </form>
+            <button class="btn btn-lg btn-info btn-block margin-top" onclick="switchLoginRegistration();return false;">Зарегистрироваться</button>
+        </div>
+    </div>
+</div>
+
+<div class="container hidden" id="register">
+    <div class="login-container">
+        <div class="output"></div>
+        <div class="avatar"><img src="img/books.jpg" class="img-circle img-responsive" /></div>
+        <div class="form-box">
+            <form id="register_form" method="post" accept-charset="utf-8" action="javascript:void(0);" onsubmit="register();return false;">
+                <input name="login" type="text" placeholder="Логин">
+                <input type="password" placeholder="Пароль" name="password" class="password">
+                <button type="submit" name="submit" class="btn btn-lg btn-block btn-success margin-top" value="register_form">Зарегистрироваться</button>
+            </form>
+            <button class="btn btn-lg btn-info btn-block margin-top" onclick="switchLoginRegistration();return false;">Назад</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
